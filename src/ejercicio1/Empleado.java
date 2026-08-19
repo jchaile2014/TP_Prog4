@@ -52,5 +52,11 @@ public class Empleado extends Persona {
                " Puesto: " + puesto;
         }
 	
+	//método devuelveProximoLegajo
+	
+	public static int devuelveProximoLegajo() {
+	    return contador + 1;
+	}
+	
 	
 	}
