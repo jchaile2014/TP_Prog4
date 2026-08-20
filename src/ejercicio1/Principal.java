@@ -1,6 +1,7 @@
 package ejercicio1;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 
 public class Principal {
 
@@ -20,5 +21,23 @@ public class Principal {
 		System.out.println(emp5.toString());
 
 		System.out.println("\nEl próximo legajo será el " + Empleado.devuelveProximoLegajo());	
+		
+		
+		ArrayList<Empleado> listaEmpleados = new ArrayList<>();
+		listaEmpleados.add(emp1);
+		listaEmpleados.add(emp2);
+		listaEmpleados.add(emp3);
+		listaEmpleados.add(emp4);
+		listaEmpleados.add(emp5);
+
+		System.out.println("\n--- Búsqueda por DNI ---");
+		Empleado encontrado = Empleado.buscarPorDni(listaEmpleados, "22222222");
+		if (encontrado != null) {
+			System.out.println(encontrado.toString());
+		} else {
+			System.out.println("No se encontró un empleado con ese DNI");
+		}
+		
+		
 	}
 }

@@ -1,5 +1,6 @@
 package ejercicio1;
 
+import java.util.ArrayList;
 import java.time.LocalDate;
 
 public class Empleado extends Persona {
@@ -58,5 +59,15 @@ public class Empleado extends Persona {
 	    return contador + 1;
 	}
 	
-	
+	public static Empleado buscarPorDni(ArrayList<Empleado> empleados, String dni) {
+	    for (Empleado e : empleados) {
+	        if (dni.equals(e.getDni())) {
+	            return e;
+	        }
+	        
+	    }
+	    return null;
 	}
+	
+	
+}
