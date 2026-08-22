@@ -44,6 +44,7 @@ public class Empleado extends Persona {
 	}
 	
 	////métodos
+	
 	//método toString
 	
 	@Override
@@ -59,6 +60,8 @@ public class Empleado extends Persona {
 	    return contador + 1;
 	}
 	
+	//metodo buscarPorDni
+	
 	public static Empleado buscarPorDni(ArrayList<Empleado> empleados, String dni) {
 	    for (Empleado e : empleados) {
 	        if (dni.equals(e.getDni())) {
@@ -68,6 +71,4 @@ public class Empleado extends Persona {
 	    }
 	    return null;
 	}
-	
-	
 }

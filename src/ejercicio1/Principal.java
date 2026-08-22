@@ -36,8 +36,6 @@ public class Principal {
 			System.out.println(encontrado.toString());
 		} else {
 			System.out.println("No se encontró un empleado con ese DNI");
-		}
-		
-		
+		}		
 	}
 }

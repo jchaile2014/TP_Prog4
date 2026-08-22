@@ -2,7 +2,7 @@ package ejercicio1;
 
 import java.time.LocalDate;
 
-public class Persona {
+public abstract class Persona {
 
 	//declaración de variables
 	
@@ -102,6 +102,7 @@ public class Persona {
 	}
 	
     ////métodos
+
 	//método toString
 	
 	@Override
@@ -115,7 +116,4 @@ public class Persona {
                " Teléfono: " + telefono +
                " Email: " + email;
 	}
-	
-	
-	
 }
