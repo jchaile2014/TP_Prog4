@@ -4,8 +4,7 @@ import java.time.LocalDate;
 
 public abstract class Persona {
 
-	//declaración de variables
-	
+
 	private String dni;
 	private String nombre;
 	private String apellido;
@@ -15,7 +14,6 @@ public abstract class Persona {
 	private String telefono;
 	private String email;
 	
-	//constructores
 	
     public Persona() {
         this.nombre = "sin nombre";
@@ -34,8 +32,7 @@ public abstract class Persona {
         this.telefono = telefono;
         this.email = email;
     }
-	
-  //getters and setters
+
     
 	public String getDni() {
 		return dni;
@@ -101,10 +98,7 @@ public abstract class Persona {
 		this.email = email;
 	}
 	
-    ////métodos
-
-	//método toString
-	
+   
 	@Override
 	public String toString() {
         return "DNI: " + dni +
@@ -116,4 +110,12 @@ public abstract class Persona {
                " Teléfono: " + telefono +
                " Email: " + email;
 	}
+	
+	public static void VerificarDNI(String dni) throws ExVerificarDNI {
+	    if (dni == null || !dni.matches("\\d{8}")) {
+	        throw new ExVerificarDNI();
+	    }
+	}
+	
+	
 }

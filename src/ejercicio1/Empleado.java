@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 public class Empleado extends Persona {
 	
-	//declaración de variables
 	
 	private final int legajo;
 	private String puesto;
@@ -17,7 +16,6 @@ public class Empleado extends Persona {
 	    this.legajo = contador;
 	}
 	
-	//constructores
 
 	public Empleado(String dni, String nombre, String apellido,
 	                LocalDate fechaNacimiento, String genero,
@@ -29,7 +27,6 @@ public class Empleado extends Persona {
 	    this.puesto = puesto;    
 	}
 	
-	//getters and setters
 	
 	public int getLegajo() {
 		return legajo;
@@ -43,9 +40,6 @@ public class Empleado extends Persona {
 		this.puesto = puesto;
 	}
 	
-	////métodos
-	
-	//método toString
 	
 	@Override
 	public String toString() {
