@@ -54,21 +54,5 @@ public class Empleado extends Persona {
                " Puesto: " + puesto;
         }
 	
-	//método devuelveProximoLegajo
-	
-	public static int devuelveProximoLegajo() {
-	    return contador + 1;
-	}
-	
-	//metodo buscarPorDni
-	
-	public static Empleado buscarPorDni(ArrayList<Empleado> empleados, String dni) {
-	    for (Empleado e : empleados) {
-	        if (dni.equals(e.getDni())) {
-	            return e;
-	        }
-	        
-	    }
-	    return null;
-	}
+
 }
